@@ -46,7 +46,13 @@ li{
   padding: 0px 15px;
 }
 /* ---------------------------- */
-.header {}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
 .header__container {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -72,17 +78,61 @@ li{
   text-decoration: underline;
 }
 /* ------------------------- */
-.main {}
-.main__container {}
-.main__content {}
-.main__title {}
-.main__text {}
+.main {
+  padding-bottom: 80px;
+}
+.main__container {
+  display: flex;
+}
+.main__content {
+  flex: 0 1 50%;
+  align-self: flex-end;
+  padding-bottom: 60px;
+  padding-right: 20px;
+}
+.main__title {
+  font-family: CalSans;
+  color: #121212;
+  font-size: 56px;
+  line-height: 67px;
+}
+.main__title span {
+  color: #FF6428;
+}
+.main__title:not(:last-child){
+  margin-bottom: 16px;
+}
+.main__text {
+  line-height: 24px;
+  font-weight: 500;
+  max-width: 420px;
+}
+.main__title:not(:last-child){
+  margin-bottom: 31px;
+}
 .main__actions {}
 
-.actions-main {}
-.actions-main__button {}
+.actions-main {
+  display: flex;
+  align-items: center;
+}
+.actions-main__button {
+  padding: 18.5px 48px;
+  background: #FF6428;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 24px;
+}
+.actions-main__button:not(:last-child){
+  margin-right: 40px;
+}
 .actions-main__icon {}
-
-.main__decor {}
+.actions-main__icon:not(:last-child) {
+  margin-right: 27px;
+}
+.main__decor {
+  flex: 0 1 50%;
+}
 .decor-main {}
 .decor-main__image {}
