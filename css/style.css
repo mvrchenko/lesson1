@@ -61,10 +61,15 @@ li{
   align-items: center;
   min-height: 152px;
 }
-.header__logo {}
+.header__logo img {
+  max-width: 75px;
+}
 .header__menu {}
 
-.menu {}
+.menu {
+  padding: 5px;
+  background-color: #fff;
+}
 .menu__list {
   display: flex;
   gap: 56px;
@@ -87,6 +92,7 @@ li{
 .main__content {
   flex: 0 1 50%;
   align-self: flex-end;
+  padding-top: 120px;
   padding-bottom: 60px;
   padding-right: 20px;
 }
@@ -135,5 +141,17 @@ li{
   flex: 0 1 50%;
 }
 .main__image {
+  display: inline-block;
+  position: relative;
   margin-right: -135px;
+}
+.main__image::after{
+  content: "";
+  background: url('../img/main/decor.svg') 0 0 no-repeat;
+  width: 80px;
+  height: 80px;
+  right: 36.3%;
+  bottom: 0;
+  transform: translate(0, 50%);
+  position: absolute;
 }
