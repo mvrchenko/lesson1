@@ -43,7 +43,10 @@ li {
   display: flex;
   flex-direction: column;
 }
-
+/* --------------------- */
+.title {
+  font-family: CalSans;
+}
 /* --------------------- */
 .page {
   flex: 1 1 auto;
