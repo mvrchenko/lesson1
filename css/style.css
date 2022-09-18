@@ -86,6 +86,15 @@ li{
 @media (max-width: 1092px) {
   .header__container {
     gap: 50px;
+    min-height: 100px;
+  }
+  .menu__list{
+    gap: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .header__container{
+    min-height: 65px;
   }
 }
 /* ------------------------- */
@@ -169,9 +178,23 @@ li{
     width: 100%;
   }
   .main__content {
-    flex: 0 0 70%;
+    flex: 0 0 60%;
+    padding-bottom: 0;
   }
   .main__decor {
-    flex: 0 0 30%;
+    flex: 0 0 40%;
+  }
+}
+@media (max-width: 767.98px) {
+  .main__content{
+    flex: 1 1 100%;
+    padding-right: 0;
+    padding-top: 80px;
+  }
+  .main__decor{
+    display: none;
+  }
+  .main__title{
+    font-size: 44px;
   }
 }
